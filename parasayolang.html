@@ -1,0 +1,53 @@
+<html>
+<body>
+
+<div> 
+
+<h1>Hi Babe!</h1>
+<h2>I like you a lot, wanna go on a date?</h2>
+
+<button id="yesbutton">Yes</button>
+<button id="no">No</button>
+
+</div>
+
+<style>
+div{
+ 
+ text-align: center;
+ vertical-align: middle;
+ }
+ #no{
+ 
+ position: absolute;
+ }
+
+</style>
+<script>
+
+document.getElementById("yesbutton").addEventListener("click",function()
+{
+alert("IloveYou! See You Soon");
+});
+ var b = document.getElementById("no")
+ b.addEventListener("click",change);
+ function change()
+ {
+ 
+ var i = Math.floor(Math.random()*1000)+1;
+ var j = Math.floor(Math.random()*700)+1;
+ b.style.left = i+"px";
+ b.style.top = j+"px";
+ 
+ 
+ 
+ }
+ 
+
+</script>
+
+
+
+</body>
+
+</html
